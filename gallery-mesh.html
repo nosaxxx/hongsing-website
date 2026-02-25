@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>菱形網工程 - 上慶企業社 S.Q Manufacturers</title>
+    <meta name="description" content="鍍鋅菱形網、PVC菱形網、不鏽鋼菱形網施工案例">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(250, 245, 239, 0.95) 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: var(--primary-dark);
+            font-family: 'Noto Serif TC', serif;
+            margin-bottom: 15px;
+        }
+        .page-header p {
+            color: var(--gray);
+            font-size: 15px;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            background: var(--cream);
+            font-size: 13px;
+            color: var(--gray);
+        }
+        .breadcrumb a {
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Announcement Banner -->
+    <div id="announcement-banner" class="announcement-banner" style="display: none;">
+        <div class="container">
+            <span id="announcement-text"></span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>S.Q 上慶</h1>
+                <span class="tagline">專業圍籬製造</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">首頁</a>
+                <a href="index.html#products">產品</a>
+                <a href="index.html#projects">工程實績</a>
+                <a href="gallery-mesh.html">菱形網</a>
+                <a href="gallery-fence.html">圍籬</a>
+                <a href="gallery-gate.html">大門</a>
+                <a href="index.html#contact">聯絡我們</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">首頁</a> › 菱形網工程
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>菱形網工程</h1>
+            <p>鍍鋅菱形網 · PVC菱形網 · 不鏽鋼菱形網</p>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="鍍鋅菱形網圍籬">
+                    <div class="gallery-overlay">
+                        <h4>鍍鋅菱形網</h4>
+                        <p>高鍍鋅防鏽，適合海邊/工廠</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="PVC菱形網">
+                    <div class="gallery-overlay">
+                        <h4>PVC菱形網</h4>
+                        <p>防水耐腐蝕，適用惡劣環境</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="不鏽鋼菱形網">
+                    <div class="gallery-overlay">
+                        <h4>不鏽鋼菱形網</h4>
+                        <p>永久使用，金屬光澤美觀</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="彩色菱形網">
+                    <div class="gallery-overlay">
+                        <h4>彩色菱形網</h4>
+                        <p>烤漆上色，客製化顏色</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="農田圍籬">
+                    <div class="gallery-overlay">
+                        <h4>農田圍籬</h4>
+                        <p>果園、農地防護圍籬</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="工廠圍籬">
+                    <div class="gallery-overlay">
+                        <h4>工廠圍籬</h4>
+                        <p>工廠、倉庫安全圍籬</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section" style="background: var(--cream);">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">需要報價？</h2>
+            <p style="margin-bottom: 30px; color: var(--gray);">告訴我們您的需求，專業團隊為您服務</p>
+            <a href="index.html#contact" class="btn btn-primary">立即詢價</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 上慶企業社 S.Q Manufacturers. All rights reserved.</p>
+            <p class="footer-sub">專業菱形網、圍籬製造40年經驗</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=202602252"></script>
+</body>
+</html>

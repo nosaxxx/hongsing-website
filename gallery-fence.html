@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圍籬工程 - 上慶企業社 S.Q Manufacturers</title>
+    <meta name="description" content="農地圍籬、球場圍籬、機房圍籬施工案例">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.1) 0%, rgba(250, 245, 239, 0.95) 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: var(--primary-dark);
+            font-family: 'Noto Serif TC', serif;
+            margin-bottom: 15px;
+        }
+        .page-header p {
+            color: var(--gray);
+            font-size: 15px;
+        }
+        .breadcrumb {
+            padding: 20px 0;
+            background: var(--cream);
+            font-size: 13px;
+            color: var(--gray);
+        }
+        .breadcrumb a {
+            color: var(--primary-dark);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Announcement Banner -->
+    <div id="announcement-banner" class="announcement-banner" style="display: none;">
+        <div class="container">
+            <span id="announcement-text"></span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <h1>S.Q 上慶</h1>
+                <span class="tagline">專業圍籬製造</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">首頁</a>
+                <a href="index.html#products">產品</a>
+                <a href="index.html#projects">工程實績</a>
+                <a href="gallery-mesh.html">菱形網</a>
+                <a href="gallery-fence.html">圍籬</a>
+                <a href="gallery-gate.html">大門</a>
+                <a href="index.html#contact">聯絡我們</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">首頁</a> › 菱形網工程
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>圍籬工程</h1>
+            <p>農地圍籬 · 球場圍籬 · 機房圍籬 · 活動圍籬</p>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80" alt="農地圍籬">
+                    <div class="gallery-overlay">
+                        <h4>農地圍籬</h4>
+                        <p>太陽能電廠圍籬</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80" alt="球場圍籬">
+                    <div class="gallery-overlay">
+                        <h4>球場圍籬</h4>
+                        <p>籃球場、網球場圍籬</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80" alt="機房圍籬">
+                    <div class="gallery-overlay">
+                        <h4>機房圍籬</h4>
+                        <p>電機設備保護圍籬</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80" alt="活動展場圍籬">
+                    <div class="gallery-overlay">
+                        <h4>活動圍籬</h4>
+                        <p>臨時施工安全圍籬</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80" alt="倉庫圍籬">
+                    <div class="gallery-overlay">
+                        <h4>倉庫圍籬</h4>
+                        <p>室內倉儲空間區隔</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&q=80" alt="學校圍籬">
+                    <div class="gallery-overlay">
+                        <h4>學校圍籬</h4>
+                        <p>操場、遊戲區圍籬</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="section" style="background: var(--cream);">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">需要報價？</h2>
+            <p style="margin-bottom: 30px; color: var(--gray);">告訴我們您的需求，專業團隊為您服務</p>
+            <a href="index.html#contact" class="btn btn-primary">立即詢價</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 上慶企業社 S.Q Manufacturers. All rights reserved.</p>
+            <p class="footer-sub">專業菱形網、圍籬製造40年經驗</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=202602252"></script>
+</body>
+</html>
