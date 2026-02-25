@@ -42,39 +42,19 @@ function submitForm(event) {
     form.reset();
 }
 
-// Announcement System
-const announcements = [
-    {
-        text: "📢 連假公告：3/1 - 3/10 放假休息，請提前安排工程進度，祝大家假期愉快！",
-        start: "2026-02-25",
-        end: "2026-03-10"
-    },
-    {
-        text: "🧧 春節連假公告：2026年農曆新年期間暫停施工，敬請提前安排",
-        start: "2026-01-20",
-        end: "2026-02-15"
-    },
-    {
-        text: "📢 中秋節連假：10/6-10/10 暫停出貨，祝佳節愉快！",
-        start: "2025-10-01",
-        end: "2025-10-10"
-    }
-];
+// Announcement System - 手動控制
+// 把 active 改成 true 就會顯示，false 就不顯示
+const announcement = {
+    active: true,
+    text: "📢 連假公告：3/1 - 3/10 放假休息，請提前安排工程進度，祝大家假期愉快！"
+};
 
 function checkAnnouncement() {
-    const now = new Date();
-    
-    for (const announcement of announcements) {
-        const start = new Date(announcement.start);
-        const end = new Date(announcement.end);
-        
-        if (now >= start && now <= end) {
-            const banner = document.getElementById('announcement-banner');
-            const text = document.getElementById('announcement-text');
-            text.textContent = announcement.text;
-            banner.style.display = 'block';
-            return;
-        }
+    if (announcement.active) {
+        const banner = document.getElementById('announcement-banner');
+        const text = document.getElementById('announcement-text');
+        text.textContent = announcement.text;
+        banner.style.display = 'block';
     }
 }
 
